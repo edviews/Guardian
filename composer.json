@@ -1,0 +1,25 @@
+{
+    "name": "edviews/guardian",
+    "description": "",
+    "authors": [
+        {
+            "name": "Kerron Gordon",
+            "email": "kgpsounds.com@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Guardian\\Providers\\GuardianServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Guardian\\": ""
+        }
+    }
+}

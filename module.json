@@ -1,0 +1,16 @@
+{
+    "name": "Guardian",
+    "alias": "guardian",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Guardian\\Providers\\GuardianServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
