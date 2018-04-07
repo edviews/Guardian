@@ -7,13 +7,13 @@
         <title>Module Guardian</title>
 
        <!-- Laravel Mix - CSS File -->
-       <!-- <link rel="stylesheet" href="{{ mix('css/app.css','modules/guardian') }}"> -->
+       <!-- <link rel="stylesheet" href="@{{ mix('css/app.css','modules/guardian') }}"> -->
 
     </head>
     <body>
         @yield('content')
 
         <!-- Laravel Mix - JS File -->
-        <!-- <script src="{{ mix('js/app.js', 'modules/guardian') }}"></script> -->
+        <!-- <script src="@{{ mix('js/app.js', 'modules/guardian') }}"></script> -->
     </body>
 </html>
