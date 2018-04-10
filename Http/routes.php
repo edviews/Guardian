@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => 'web', 'prefix' => 'guardian', 'namespace' => 'Modules\Guardian\Http\Controllers'], function()
+Route::group(['middleware' => 'api', 'prefix' => 'api/v1/guardian', 'namespace' => 'Modules\Guardian\Http\Controllers'], function()
 {
     Route::get('/', 'GuardianController@index');
 });
