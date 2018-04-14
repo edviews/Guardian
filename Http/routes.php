@@ -1,6 +1,11 @@
 <?php
 
-Route::group(['middleware' => 'api', 'prefix' => 'api/v1/guardian', 'namespace' => 'Modules\Guardian\Http\Controllers'], function()
+Route::group(['middleware' => 'api', 'prefix' => 'api/v1', 'namespace' => 'Modules\Guardian\Http\Controllers'], function()
 {
-    Route::get('/', 'GuardianController@index');
+
+    Route::group(['prefix' => 'students'], function () {
+        Route::apiResource('/{student}/guardian', 'GuardianController');
+        Route::apiResource('/{student}/emergency', 'EmergencyController');
+    });
+
 });
