@@ -16,9 +16,9 @@ class CreateGuardiansTable extends Migration
         Schema::create('guardians', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('student_id')->unsigned();
-            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade')->onUpdate('cascade');
-            $table->string('father_education');
-            $table->string('mother_education');
+            $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
+            $table->text('father_education');
+            $table->text('mother_education');
             $table->timestamps();
         });
     }
